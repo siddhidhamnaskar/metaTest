@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #navbar{
+        display: flex;
+        /* gap:50%; */
+        border-bottom: 1px solid black;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-size: 27px;
+        font-family:'Times New Roman', Times, serif;
+        border: none;
+        justify-content: space-between;
+        /* position: fixed; */
+        }
+        .rightbar{
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .rightbar>button{
+            width: 100px;
+            height: 50px;
+            margin-bottom: -20px;
+            margin-top: 10px;
+            border-color: #008feb;
+        }
+        .titlebox{
+            text-align: center;
+            background-color:#008feb;
+            color: white;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .titlebox>h1{
+            font-size: 30px;
+        }
+        
+        .titlebox>p{
+            font-size: 20px;
+        }
+        .box{
+            text-align: center;
+        }
+        #Container{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+        }
+        #Container>div{
+            width: 70%;
+            height: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            /* border: 1px solid black; */
+            text-align: start;
+            padding: 30px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+        }
+        #Container>div>img{
+            width: 100%;
+            height: 100px;
+        }
+        #Container>div>button{
+            width: 70px;
+        }
+        #footer{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            gap:70%;
+            margin-top: 40px;
+        }
+        #footer>p:nth-child(2)
+        {
+            color: #008feb;
+        }
+
+
+        @media screen and (min-width:0px) and (max-width:600px)
+        {
+            #Container{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    </style>
+   
+
+</head>
+<body>
+
+    <div id="navbar">
+        <p>Title</p>
+        <div class="rightbar">
+            <p>Home</p>
+            <p>About<p/>
+            <p>Blog</p>
+            <p>Contact</p>
+            <button>Button</button>
+        </div>
+
+       
+    </div>
+    <div class="titlebox">
+        <h1>Title</h1>
+        <p>Lorem ipsum sit amet consector adipicing elit. Maceuns risis me jewjnnbmdnb ,jnsakjhk,snb.</p>
+        <button>Read More</button>
+
+    </div>
+    
+
+    <div class="box">
+        <h1>Classes</h1>
+        <p>Lorem ipsum sit amet adipicing elit. Meceuns risis me jewjnnnbjhb,jjjj.</p>
+        <div id="Container">
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <p>Copyright @2021 all right Reserved</p>
+        <p >Back to Top</p>
+        <!-- <img src="images/training-certification/Advanced-DITA–XML.jpg"> -->
+    </div>
+</body>
+</html>
+<script src="index.js">
+ 
+
+</script>
