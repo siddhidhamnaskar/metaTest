@@ -13,7 +13,7 @@
     data.map(function(elem){
         var div=document.createElement("div");
         var image=document.createElement("img");
-        image.src="https://github.com/metapercept/CodeExcercise/blob/master/Excercise-1/relatedfiles/Images/API-Documentation.jpg?raw=true";
+        image.src=elem.ImageUrl;
         var h2=document.createElement("h2");
         h2.innerText=elem.Name;
         var p=document.createElement("p");
